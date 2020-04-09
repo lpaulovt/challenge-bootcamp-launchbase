@@ -1,0 +1,27 @@
+{
+  "name": "desafio02",
+  "version": "1.0.0",
+  "description": "Repositório refente ao desafio do bootcamp launchbase",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpaulovt/challenge-bootcamp-launchbase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpaulovt/challenge-bootcamp-launchbase/issues"
+  },
+  "homepage": "https://github.com/lpaulovt/challenge-bootcamp-launchbase#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

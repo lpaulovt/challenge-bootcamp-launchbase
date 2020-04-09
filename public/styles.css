@@ -166,3 +166,21 @@ iframe {
     top: 6%;
 }
 
+/* === NOT FOUND === */
+
+.notfound__message{
+    text-align: center;
+    margin: 150px auto;
+   
+}
+#notfound__message-title{
+    font-size: 42px;
+    line-height: 52px;
+    color: rgb(207, 27, 27);
+}
+
+#notfound__message-description {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 10px;
+}

@@ -93,6 +93,7 @@ header{
 
 .card {
     background-color: rgba(0, 0, 0, 0.1);
+    display: grid;
     text-align: center;
 }
 
@@ -114,6 +115,7 @@ header{
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card__price {

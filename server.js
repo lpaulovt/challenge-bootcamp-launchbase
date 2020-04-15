@@ -20,6 +20,22 @@ server.get("/courses", function(req, res){
     return res.render('courses', { items: courses})
 })
 
+server.get("/about-course", function(req, res){
+    const id = req.query.id;
+
+    const course = courses.find(function(course){
+        if (course.id == id) {
+            return true
+        }
+    })
+
+    if(!course){
+        res.status(404).render("not-found")
+    }
+
+    return res.render("about-course", {item: course});
+})
+
 server.use(function(req, res){
     res.status(404).render("not-found")
 })

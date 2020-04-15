@@ -126,47 +126,7 @@ header{
     text-align: center;
 }
 
-/* === MODAL === */
 
-.modal-overlay {
-    background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity:0;
-    visibility: hidden;
-}
-
-/* === ACTIVE MODAL === */  
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal {
-    background: white;
-    height: 90%;
-    width: 90%;
-    margin: 5vh auto;
-    position: relative;
-}
-
-.modal .close-modal {
-    color: black;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    cursor: pointer;
-}
-
-iframe {
-    height: 90%;
-    width: 100%;
-    position: absolute;
-    top: 6%;
-}
 
 /* === NOT FOUND === */
 
@@ -185,4 +145,16 @@ iframe {
     font-size: 32px;
     line-height: 42px;
     margin-top: 10px;
+}
+
+/*=== COURSE PAGE ===*/
+.course{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.course .links {
+    padding: 10px;
+}
+.course .links a {
+    border-bottom: 1px solid #50fa7b;
 }

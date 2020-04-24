@@ -9,7 +9,9 @@ server.set("view engine", "njk")
 server.use(express.static('public'))
 
 nunjucks.configure("views", {
-    express:server
+    express:server,
+    noCache: true,
+    autoescape: false
 })
 
 server.get("/", function(req, res){
@@ -20,20 +22,18 @@ server.get("/courses", function(req, res){
     return res.render('courses', { items: courses})
 })
 
-server.get("/about-course", function(req, res){
-    const id = req.query.id;
+server.get("/courses/:id", function(req, res){
+    const id = req.params.id
 
-    const course = courses.find(function(course){
-        if (course.id == id) {
-            return true
-        }
-    })
+    const course = courses.find(function (course){
+            return course.id == id }    
+    )
 
     if(!course){
-        res.status(404).render("not-found")
+        res.send("Not-found!")
     }
 
-    return res.render("about-course", {item: course});
+    return res.render('course', {item: course});
 })
 
 server.use(function(req, res){
